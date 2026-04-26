@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Keeper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Score Keeper</h1>
+
+    <div class="scoreboard">
+        <p>Player 1: <span id="score1">0</span></p>
+        <p>Player 2: <span id="score2">0</span></p>
+    </div>
+
+    <h2 id="timer">Time: 10</h2>
+
+    <div class="buttons">
+        <button id="p1" onclick="incrementp1()" class="player1">Player 1 +1</button>
+        <button id="p2" onclick="incrementp2()" class="player2">Player 2 +1</button>
+    </div>
+
+    <button id="restart" onclick="resetGame()" class="reset-btn">Reset</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
